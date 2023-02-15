@@ -1,8 +1,10 @@
 git checkout -b branch1
 mv dir1/dir2/foo dir1/
 rm -rf dir1/dir2
+touch newfile1
 git add -A
 git commit -m "apply changes on branch1"
+git checkout main
 git checkout -b branch2
 mv dir1/dir2/foo dir1/dir2/foo_modifed
 rm -rf dir3/*
